@@ -49,6 +49,8 @@
 }
 
 :root {
+    
+
     --background: oklch(95.815% 0.00011 271.152);
     --foreground: oklch(23.075% 0.00003 271.152);
     --card: oklch(1 0 0);
@@ -143,4 +145,32 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 200% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-animated {
+    background: linear-gradient(30deg, #f4f4f4, #f4f4f4, #646464, #f4f4f4, #f4f4f4);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: moveGradient 6s linear infinite;
+}
+
+
+.gradient-inverted {
+        background: linear-gradient(120deg, #c9c9c9, #c9c9c9, #727272, #c9c9c9, #c9c9c9);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }

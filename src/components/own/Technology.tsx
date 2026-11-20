@@ -10,7 +10,7 @@ function Technology({img,text,info}: TechnologyProps) {
   return (
     <>
         <div className="flex flex-col justify-center items-center gap-2">
-          <img src={"/icons/" + img} alt="" className="h-12 w-12 object-contain" />
+          <img src={"/icons/" + img} alt="" className="h-14 w-13 object-contain" />
 
           <p className="flex flex-col items-center">
           <span className="text-sm">{text}</span>
